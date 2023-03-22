@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel = "stylesheet" href="style.css"></style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Password Generator</h1>
+        <div class="display-container">
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+            <button data-copybtn>
+                <span data-copyMsg></span>
+                <i class="fa-solid fa-copy" data-copyMsg=""></i>
+            </button>
+        </div>
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password length</p>
+                <p data-lengthNum>0</p>
+            </div>
+            <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider> 
+
+            <div>
+                <input type="checkbox" id="uppercase">
+                <label for="uppercase">Include Uppercase</label>
+            </div>
+            <div>
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include Lowercase</label>
+            </div>
+            <div>
+                <input type="checkbox" id="number">
+                <label for="number">Include Numbers</label>
+            </div>
+            <div>
+                <input type="checkbox" id="symbol">
+                <label for="symbol">Include Symbol</label>
+            </div>
+
+            <div class="strength-container">
+                <p>Strength<p>
+                <div data-indicator></div>
+            </div>
+
+            <button class="generate-btn">Generate Password</button>
+        </div>
+
+
+    </div> 
+    <script src="script.js"></script>
+</body>
+<script src="https://kit.fontawesome.com/907ae414ea.js" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,36 @@
+*,
+*::before,   
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+:root{
+    --dk-violet : hsl(268, 75% , 9%);
+    --lt-violet: hsl(268, 47% , 21%) ; 
+    --lt-violet2: hsl(281, 89% , 26%) ;
+    --vb-violet:   hsl(285 , 91% , 52%) ;
+    --vb-violet:   hsl(290 , 70% , 36%) ;
+
+    --vb-yellow: hsl(52, 100% , 62%) ; 
+
+    --pl-white: hsl(0, 0% , 100%) ; 
+
+    --vb-cyan: hsl(176, 100% , 44%) ; 
+    --vb-cyan2: hsl(176, 92% , 70%) ; 
+    --dk-text:  hsl(198 , 20% , 13 %) ; 
+}
+
+.wrapper{
+    width: 100vw ;
+    height: 100vh ;
+    background:linear-gradient(51deg, rgba(18, 56, 147, 1) 0%, rgba(23, 83, 231, 1) 100%); 
+
+    display: flex;
+    flex-direction: column ; 
+    align-items: center;
+    justify-content: center ;
+}    
